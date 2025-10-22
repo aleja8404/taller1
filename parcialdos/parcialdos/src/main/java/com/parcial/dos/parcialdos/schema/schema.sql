@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS accounts;
+
+
+
+
+
+CREATE TABLE accounts (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  account_number VARCHAR(50) UNIQUE NOT NULL,
+  owner_name VARCHAR(100) NOT NULL,
+  balance DECIMAL(10,2) NOT NULL,
+  active BOOLEAN NOT NULL
+);
+
+
